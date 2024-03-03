@@ -42,6 +42,4 @@ app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
 
-// ce825f7a6b2d4367860eca38a698b045 - access key id
-// 05f2bda0e2ef204bb327e86c737c26f16bd94e0ae8478b0321d066946ab9a947 - secret key
-// https://3675b1c87f7ee8daae28ea194f4de2ba.r2.cloudflarestorage.com - url
+
