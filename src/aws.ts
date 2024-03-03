@@ -7,8 +7,6 @@ const s3 = new S3({
     endpoint: "https://3675b1c87f7ee8daae28ea194f4de2ba.r2.cloudflarestorage.com "
 })
 
-// fileName => output/12312/src/App.jsx
-// filePath => /Users/harkiratsingh/vercel/dist/output/12312/src/App.jsx
 export const uploadFile = async (fileName: string, localFilePath: string) => {
     const fileContent = fs.readFileSync(localFilePath);
     const response = await s3.upload({
