@@ -2,9 +2,9 @@ import { S3 } from "aws-sdk";
 import fs from "fs";
 
 const s3 = new S3({
-    accessKeyId: "ce825f7a6b2d4367860eca38a698b045",
-    secretAccessKey: "05f2bda0e2ef204bb327e86c737c26f16bd94e0ae8478b0321d066946ab9a947",
-    endpoint: "https://3675b1c87f7ee8daae28ea194f4de2ba.r2.cloudflarestorage.com "
+    accessKeyId: process.env.ACCESSKEYID,
+    secretAccessKey: process.env.SECRETACCESSKEY,
+    endpoint: process.env.ENDPOINT
 })
 
 export const uploadFile = async (fileName: string, localFilePath: string) => {
